@@ -1,0 +1,63 @@
+.about-system {
+  position: relative;
+  padding: 100px 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  background-image: url('../../public/img/layered-waves-haikei.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.about-system h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: aliceblue;
+}
+
+.about-description {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  font-size: 1.05rem;
+  opacity: 0.85;
+  line-height: 1.6;
+  color: aliceblue;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about-card {
+  padding: 32px 24px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.about-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.5;
+  color: aliceblue;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
+

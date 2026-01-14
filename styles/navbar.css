@@ -1,0 +1,41 @@
+.glass-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  z-index: 1000;
+}
+
+.glass-nav .logo {
+  font-weight: bold;
+  color: #fff;
+}
+
+.glass-nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.glass-nav a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.glass-nav a:hover {
+  opacity: 1;
+}
