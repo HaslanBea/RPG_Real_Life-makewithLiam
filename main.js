@@ -14,3 +14,4 @@ async function loadComponent(id, path) {
 }
 
 loadComponent('about', './components/AboutSystem/aboutSystem.html');
+loadComponent('top-three', './components/TopThree/topThree.html');
