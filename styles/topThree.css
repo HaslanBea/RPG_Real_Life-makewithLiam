@@ -20,19 +20,18 @@
 /* CARD BASE */
 .podium-card {
   width: 220px;
-  height: 360px;
+  height: 360px; /* formato Instagram */
   border-radius: 18px;
   overflow: hidden;
   position: relative;
   text-decoration: none;
   color: #fff;
 
-  background-size: cover;
-  background-position: center;
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
 
   transition: transform 0.3s ease;
 }
-
 
 .podium-card:hover {
   transform: translateY(-8px);
@@ -116,4 +115,3 @@
   background-size: cover;
   background-position: center;
 }
-
