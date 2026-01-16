@@ -1,0 +1,55 @@
+<section class="highlights">
+  <h2>🔥 Destaques</h2>
+
+  <div class="carousel-wrapper">
+    <button class="nav prev" onclick="scrollCarousel(-1)">‹</button>
+
+    <div class="carousel" id="highlights-carousel">
+
+      <div class="highlight-card img-missao">
+        <div class="card-content">
+          <h3>Missão da Semana</h3>
+          <p>Desafio especial com XP bônus.</p>
+          <a href="https://kyodo.link/missao" target="_blank">Ver no Kyodo</a>
+        </div>
+      </div>
+
+      <div class="highlight-card img-evento">
+        <div class="card-content">
+          <h3>Evento / Festa</h3>
+          <p>Regras especiais e recompensas.</p>
+          <a href="https://kyodo.link/evento" target="_blank">Ver no Kyodo</a>
+        </div>
+      </div>
+
+      <div class="highlight-card img-regras">
+        <div class="card-content">
+          <h3>Regras Importantes</h3>
+          <p>Atualizações recentes do sistema.</p>
+          <a href="https://kyodo.link/regras" target="_blank">Ver no Kyodo</a>
+        </div>
+      </div>
+
+      <div class="highlight-card img-extra">
+        <div class="card-content">
+          <h3>Trabalhos Extras</h3>
+          <p>Ganhe XP fora das missões.</p>
+          <a href="https://kyodo.link/extras" target="_blank">Ver no Kyodo</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="nav next" onclick="scrollCarousel(1)">›</button>
+  </div>
+</section>
+
+<script>
+function scrollCarousel(direction) {
+  const carousel = document.getElementById("highlights-carousel");
+  carousel.scrollBy({
+    left: direction * 320,
+    behavior: "smooth"
+  });
+}
+</script>
