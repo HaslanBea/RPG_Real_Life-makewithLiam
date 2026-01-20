@@ -21,4 +21,5 @@ loadComponent("about-system", "./components/AboutSystem/aboutSystem.html");
 loadComponent("highlights", "./components/Highlights/highlights.html");
 loadComponent("destaque", "./components/destaque/destaque.html");
 loadComponent("footer", "./components/footer/footer.html"); 
+loadComponent("enquete", "./components/enquete/enquete.html");
 
