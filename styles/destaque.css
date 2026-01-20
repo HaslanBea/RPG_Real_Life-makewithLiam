@@ -30,7 +30,7 @@
 }
 
 .user-picture {
-  background-image: url('../public/img/dest.jpg');
+  background-image: url("../public/img/dest.jpg");
 }
 
 
