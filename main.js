@@ -24,10 +24,10 @@ loadComponent(
   loadRankingData
 );
 
+loadComponent("destaque", "./components/destaque/destaque.html");
 loadComponent("top-three", "./components/TopThree/topThree.html");
 loadComponent("about-system", "./components/AboutSystem/aboutSystem.html");
 loadComponent("highlights", "./components/Highlights/highlights.html");
-loadComponent("destaque", "./components/destaque/destaque.html");
 loadComponent("footer", "./components/footer/footer.html");
 loadComponent("enquete", "./components/enquete/enquete.html");
 
