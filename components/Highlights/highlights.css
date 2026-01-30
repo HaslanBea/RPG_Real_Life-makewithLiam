@@ -94,6 +94,10 @@
   background-image: url("../../public/img/modelmasc.jpg");
 }
 
+.img-update {
+  background-image: url("../../public/img/hero.03.jpg");
+}
+
 /* BOTÃO KYODO – estilo Uiverse */
 .kyodo-btn {
   --primary-color: #ffffff;
