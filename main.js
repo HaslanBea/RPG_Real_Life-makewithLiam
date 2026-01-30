@@ -32,3 +32,6 @@ loadComponent("footer", "./components/footer/footer.html");
 loadComponent("enquete", "./components/enquete/enquete.html");
 
 
+
+ // https://docs.google.com/spreadsheets/d/e/2PACX-1vQSsnDGbjG-TFRaB_kRIpb1fFzkk4LPS8g49nNq-owDF5Cp5HyXgG75TtnvfoxEdaTh3gkFpyrq7m6v/pub?gid=860761833&single=true&output=csv
+// 
