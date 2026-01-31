@@ -1,16 +1,15 @@
-export function loadRankingData(url, containerSelector) {
-  fetch(url + "&t=" + Date.now())
+export function loadRankingData() {
+  const url = "public/dados/Modelos.csv";
+
+  fetch(url)
     .then(res => res.text())
     .then(text => {
       const linhas = text
         .split("\n")
         .map(l => l.trim())
-        .filter(l => l && !l.toLowerCase().startsWith("id"));
+        .filter(l => l);
 
-      const container = document.querySelector(containerSelector);
-      if (!container) return;
-
-      const tbody = container.querySelector("tbody");
+      const tbody = document.querySelector(".ranking tbody");
       if (!tbody) return;
 
       tbody.innerHTML = "";
@@ -18,22 +17,21 @@ export function loadRankingData(url, containerSelector) {
       linhas.forEach((linha, index) => {
         const cols = linha.split(",");
 
-        const nome = cols[1]?.trim();
-        const xp = cols[2]?.trim();
-
-        if (!nome || !xp) return;
+        const nome = cols[1];
+        const medalha = cols[2];
+        const pontos = cols[3];
+        const xp = cols[4];
 
         const tr = document.createElement("tr");
         tr.innerHTML = `
           <td>${index + 1}</td>
           <td>${nome}</td>
+          <td>${medalha}</td>
+          <td>${pontos}</td>
           <td>${xp}</td>
         `;
 
         tbody.appendChild(tr);
       });
-    })
-    .catch(err =>
-      console.error("Erro ao carregar ranking:", err)
-    );
+    });
 }

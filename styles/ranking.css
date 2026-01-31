@@ -1,43 +1,23 @@
-/* Container das três tabelas */
-.container-ranking {
-  display: flex;
-  justify-content: center;
-  gap: 24px;          /* espaço entre os cards */
-  flex-wrap: wrap;   /* se a tela diminuir, quebra para baixo */
-  margin: 40px;
-  padding: 20px;
+.ranking {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
 }
 
-/* Base comum para todas as tabelas */
-.tabela-modelo,
-.tabela-influencer,
-.tabela-fotografo {
-  width: 520px;
-  height: 400px;
-  border-radius: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; /* NÃO corta a imagem */
-  background-color: #f2f2f2;
-}
-
-/* Imagens no CSS */
-.tabela-modelo {
-  background-image: url("/public/img/modelos-tabela.png");
-}
-
-.tabela-influencer {
-  background-image: url("/public/img/Captura\ de\ tela\ 2026-01-30\ 165137.png");
-}
-
-.tabela-fotografo {
-  background-image: url("/public/img/Captura\ de\ tela\ 2026-01-30\ 164808.png");
-}
-
-.titulo-tables {
+.ranking th,
+.ranking td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
 }
 
+.ranking th {
+  background: #111;
+  color: #fff;
+}
+
+.ranking tbody tr:nth-child(even) {
+  background: #f5f5f5;
+}
