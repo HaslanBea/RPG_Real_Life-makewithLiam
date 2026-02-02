@@ -36,6 +36,12 @@ loadComponent(
       tableSelector: ".ranking-fotografos"
     });
 
+    // INFLUENCIADORES
+    loadRankingData({
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSsnDGbjG-TFRaB_kRIpb1fFzkk4LPS8g49nNq-owDF5Cp5HyXgG75TtnvfoxEdaTh3gkFpyrq7m6v/pub?gid=780073600&single=true&output=csv",
+      tableSelector: ".ranking-influencers"
+    });
+
   }
 );
 
