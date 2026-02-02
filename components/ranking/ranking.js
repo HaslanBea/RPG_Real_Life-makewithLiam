@@ -1,5 +1,5 @@
 export function loadRankingData() {
-  const url = "public/dados/Modelos.csv";
+  const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSsnDGbjG-TFRaB_kRIpb1fFzkk4LPS8g49nNq-owDF5Cp5HyXgG75TtnvfoxEdaTh3gkFpyrq7m6v/pub?gid=1571741723&single=true&output=csv";
 
   fetch(url)
     .then(res => res.text())
