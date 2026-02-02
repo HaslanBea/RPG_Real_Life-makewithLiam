@@ -18,11 +18,16 @@ async function loadComponent(id, path, callback) {
   }
 }
 
-/* Ranking */
+/* Ranking MODELOS */
 loadComponent(
   "ranking",
   "./components/ranking/ranking.html",
-  loadRankingData
+  () => {
+    loadRankingData({
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSsnDGbjG-TFRaB_kRIpb1fFzkk4LPS8g49nNq-owDF5Cp5HyXgG75TtnvfoxEdaTh3gkFpyrq7m6v/pub?gid=1571741723&single=true&output=csv",
+      tableSelector: ".ranking-modelos"
+    });
+  }
 );
 
 /* Outros componentes */
@@ -32,3 +37,4 @@ loadComponent("about-system", "./components/AboutSystem/aboutSystem.html");
 loadComponent("highlights", "./components/Highlights/highlights.html");
 loadComponent("footer", "./components/footer/footer.html");
 loadComponent("enquete", "./components/enquete/enquete.html");
+
