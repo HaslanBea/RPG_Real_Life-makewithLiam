@@ -23,12 +23,22 @@ loadComponent(
   "ranking",
   "./components/ranking/ranking.html",
   () => {
+
+    // MODELOS
     loadRankingData({
       url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSsnDGbjG-TFRaB_kRIpb1fFzkk4LPS8g49nNq-owDF5Cp5HyXgG75TtnvfoxEdaTh3gkFpyrq7m6v/pub?gid=1571741723&single=true&output=csv",
       tableSelector: ".ranking-modelos"
     });
+
+    // FOTÓGRAFOS
+    loadRankingData({
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSsnDGbjG-TFRaB_kRIpb1fFzkk4LPS8g49nNq-owDF5Cp5HyXgG75TtnvfoxEdaTh3gkFpyrq7m6v/pub?gid=1722476536&single=true&output=csv",
+      tableSelector: ".ranking-fotografos"
+    });
+
   }
 );
+
 
 /* Outros componentes */
 loadComponent("destaque", "./components/destaque/destaque.html");

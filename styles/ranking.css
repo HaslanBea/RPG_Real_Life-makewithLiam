@@ -21,3 +21,35 @@
 .ranking-modelos tbody tr:nth-child(even) {
   background: #f5f5f5;
 }
+
+.ranking-fotografos {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.ranking-fotografos th,
+.ranking-fotografos td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.ranking-fotografos th {
+  background: #001220;
+  color: #fff;
+}
+
+.ranking-fotografos tbody tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.ranking-fotografos h2 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.8rem;
+  color: #001220;
+  text-align: center;
+}
